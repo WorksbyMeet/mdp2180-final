@@ -10,13 +10,13 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("Assignments")
+@app.route("/assignments")
 def assignments():
-    return render_template("index.html")
+    return render_template("assignments.html")
 
-@app.route("classes")
+@app.route("/classes")
 def classes():
-    return render_template("index.html")
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
